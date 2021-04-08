@@ -1,106 +1,212 @@
 @charset "utf-8";
 /* CSS Document */
-/* フォント名にスペースがある場合は、ダブルクォーテーションで囲む */
 
-.header{
-	background-color:#26d0c9;
-	height: 90px;
-	color: aliceblue;
+*{
+  box-sizing:border-box;
 }
 
-.header-logo{
-	float: left;
-	font-size: 36px;
-	padding-top:20px;
-    padding-right:40px;
-    padding-bottom:20px;
-    padding-left:40px;
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
 }
 
-.header-list li{
-	float: left;
-	padding: 33px 20px;
+a {
+  text-decoration: none;
 }
 
-.main{
-  padding-top:100px;
-  padding-right:80px;
-  padding-bottom:100px;
-  padding-left:80px;
+.clear{
+  clear:left;
 }
 
-.contents{
-	height: 500px;
-	margin-top:100px;
+.container{
+  max-width:1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-.section-title{
-	border-bottom: 2px solid #c9c9ca;
-	font-size: 28px;
-	padding-bottom: 15px;
-	margin-bottom: 50px;
+header{
+  height:65px;
+  background-color:rgba(34, 49, 52, 0.9);
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:10;
 }
 
-.contents-item{
-	float: left;
-	margin-right: 40px;
+.logo{
+  width:124px;
+  margin-top:20px;
 }
 
-.contents-item p{
-	font-size: 24px;
-	
+.header-left{
+  float:left;
 }
 
-.copy-container h1{
-font-size:140px;
+.header-right {
+  float: right;
+  margin-right: -25px;
 }
 
-.copy-container h2{
-font-size:60px;
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
 }
 
-.copy-container span{
-	color:crimson;
+.header-right a{
+  line-height:65px;
+  padding:0 25px 0 25px;
+  color:white;
+  display:block;
 }
 
-.contact-form{
-	padding-top: 100px;
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-input, textarea{
-  width:400px;
+.top-wrapper{
+  padding:180px 0 100px 0;
+  background-image:url("file:///C:/Users/MAI/Desktop/progate/%E4%B8%AD%E7%B4%9A%E7%B7%A8/images/header-pink.jpg");
+  color:white;
+  background-size:cover;
+  text-align:center;
+}
+
+.top-wrapper h1{
+  font-size:45px;
+  opacity:0.7;
+  letter-spacing:5px;
+}
+
+.top-wrapper p{
+  opacity:0.7;
+}
+
+.btn-wrapper{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.btn-wrapper p{
   margin-top:10px;
-  margin-bottom:30px;
-  padding:20px;
-  font-size:18px;
-  border:1px solid #dee7ec;
+  margin-bottom:10px;
 }
 
-.contact-submit{
-  background-color:#dee7ec;
-  color:#889eab;
+.btn{
+  padding-top:8px;
+  padding-bottom:8px;
+  padding-right:24px;
+  padding-left:24px;
+  display:inline-block;
+  opacity:0.8;
+  color:white;
+  border-radius:4px;
 }
 
-.footer{
-	background-color:#2f5167;
-	height: 120px;
-	color: aliceblue;
-	padding: 40px 40px 40px 40px;
+.btn:hover{
+	opacity: 1;
 }
 
-.footer-logo{
-	float: left;
-	font-size: 32px;
+.signup{
+  background-color:#239b76;
 }
 
-.footer-list{
-	float: right
+.facebook{
+  background-color:#3b5998;
+  margin-right:10px;
 }
 
-.footer-list li{
-	padding-bottom: 20px
+.twitter{
+  background-color:#55acee;
 }
 
-/* <li>要素の黒点を取り除く*/
-li{list-style: none;
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  /* displayをnoneに指定してください */
+  display:none;
+}
+
+.lesson-wrapper{
+  padding-bottom:80px;
+  background-color:#f7f7f7;
+  text-align: center;
+}
+
+.heading{
+ padding:60px 0 30px 0; 
+ color:#5f5d60;
+}
+
+.heading h2{
+  font-weight:normal;
+}
+
+.lesson{
+  float:left;
+  width:25%;
+}
+
+.lesson-icon{
+  position:relative;
+}
+
+.lesson-icon p{
+  position:absolute;
+  top:75px;
+  width:100%;
+  color:white;
+}
+
+.txt-contents{
+  width:80%;
+  display:inline-block;
+  margin-top:20px;
+  font-size:12px;
+  color:#b3aeb5;
+}
+
+.message-wrapper{
+  text-align:center;
+  border-bottom:1px solid #eee;
+  padding-bottom:80px;
+}
+
+
+.message{
+  background-color:#5dca88;
+  padding:15px 40px 15px 40px;
+  cursor: pointer;
+  box-shadow:0 7px #1a7940;
+}
+
+.message:active{
+	box-shadow:none;
+	position: relative;
+	top:7px;
+}
+
+.heading h3{
+  font-weight:normal;
+}
+
+footer{
+  padding-top:30px;
+}
+
+footer img{
+  width:125px;
+}
+
+footer p{
+  color:#b3aeb5;
+  font-size:12px;
 }
